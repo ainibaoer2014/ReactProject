@@ -10,7 +10,7 @@ npm init -y
 - webpack:打包
 - webpack-dev-server:起一个本地服务
 ```
-npm webpack webpack-dev-server
+npm install webpack webpack-dev-server
 ```
 
 ##babel
@@ -29,9 +29,9 @@ npm install babel-core babel-loader babel-preset-es2015 babel-preset-stage-0 bab
 ##react
 - react-redux:连接redux的
 - react-router-dom:路由
-
+- react-dom:渲染页面
 ```
-npm install react redux react-redux react-router-dom -S
+npm install react redux react-redux react-dom react-router-dom -S
 ```
 ##fetch
 - fetch:获取数据的API,一般不兼容
@@ -47,6 +47,13 @@ npm install express -S
 ##scripts
 - 指定命令
 ```
-"start","webpack-dev-server --port 5000 --open --progress --color"
+"start","webpack-dev-server --port 5000 --open --progress --colors"
 "build","webpack -p"
 ```
+##目录结构
+- components:小组件 木偶组件
+- containers:页面组件或者自己的subpage目录下
+ -- home
+   --subpage:智能组件
+   --index.js
+-- index.js 用来控制显示哪一个页面
