@@ -62,3 +62,8 @@ npm install swipe-js-iso react-swipe -S
    --subpage:智能组件
    --index.js
 -- index.js 用来控制显示哪一个页面
+
+- store onlyOne
+- actions 用户发布动作
+- reducers 定义动作的规则
+- action-types actions的名字
