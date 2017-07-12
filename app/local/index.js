@@ -1,9 +1,9 @@
 //实现本地存储
 
-export function getStore(key) {
+export function getStorage(key) {
     return localStorage.getItem(key);
 }
 
-export function setStore(key,value) {
+export function setStorage(key,value) {
     localStorage.setItem(key,value);
 }
